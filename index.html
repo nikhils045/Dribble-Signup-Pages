@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | Dribbble</title>
+  </head>
+  <body>
+    <main>
+      <section class="hero-section">
+        <figure>
+          <img src="/images/heroSection.jpg" alt="hero-section" />
+        </figure>
+      </section>
+
+      <section class="content-section">
+        <div class="sign-in">
+          <p>
+            Already a member?
+            <a href="#">Sign In</a>
+          </p>
+        </div>
+
+        <form>
+          <h1>Sign up to Dribbble</h1>
+          <p>Username has already been taken</p>
+          <div class="form-field-group">
+            <div class="form-field">
+              <fieldset class="column">
+                <label for="name">Name</label>
+                <input type="text" id="name" autocomplete="name" />
+              </fieldset>
+            </div>
+            <div class="form-field">
+              <fieldset class="column">
+                <label for="username">Username</label>
+                <input type="text" id="name" autocomplete="username" />
+              </fieldset>
+            </div>
+          </div>
+          <div class="form-field">
+            <fieldset class="column">
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+            </fieldset>
+          </div>
+          <div class="form-field">
+            <fieldset class="column">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="6+ characters" />
+            </fieldset>
+          </div>
+          <div class="form-field">
+            <fieldset>
+              <input type="checkbox" id="user-terms" />
+              <label for="user-terms">
+                Creating an account means you're okay with our
+                <a href="#">Terms of Service</a>,
+                <a href="#">Privacy Policy</a>
+                , and our default
+                <a href="#">Notification Setting</a>
+                .
+              </label>
+            </fieldset>
+          </div>
+
+          <div class="form-btn">
+            <input type="submit" value="Create Account" />
+          </div>
+          <p class="recaptcha-terms">
+            This site is protected by reCAPTCHA and the Google
+            <a href="#">Privacy Policy</a>
+            and
+            <a href="#">Terms of Service</a>
+            apply.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
