@@ -32,10 +32,11 @@ main {
 
 .content-section {
   width: 55%;
+  height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 1.3rem 1rem 1rem;
-  height: auto;
 
   & a {
     color: #3434cc;
@@ -46,6 +47,7 @@ main {
 .sign-in {
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
   margin-right: 1rem;
 
   & p {
@@ -87,6 +89,8 @@ form {
 
   & .form-field-group {
     display: flex;
+    justify-content: center;
+    align-self: flex-start;
     gap: 1.2rem;
   }
 
@@ -111,6 +115,7 @@ i {
 }
 
 label:not(:last-child) {
+  display: flex;
   font-weight: 700;
 }
 
@@ -160,4 +165,66 @@ input[type="submit"] {
 
 .recaptcha-terms {
   font-size: 0.8rem;
+}
+
+/* =============== RESPONSIVE MEDIA QUERIES ============= */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 86%;
+  }
+
+  .hero-section {
+    display: none;
+  }
+
+  .content-section {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .sign-in p {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    width: 65%;
+    height: auto;
+    align-self: center;
+    margin-top: 0;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 80%;
+  }
+
+  form {
+    width: 85%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .sign-in {
+    margin: 0;
+  }
 }
