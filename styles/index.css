@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+
+body {
+  background: #fff;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-section {
+  height: 100%;
+  width: 45%;
+
+  & figure,
+  img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.content-section {
+  width: 55%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.3rem 1rem 1rem;
+
+  & a {
+    color: #3434cc;
+    font-weight: 600;
+  }
+}
+
+.sign-in {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-right: 1rem;
+
+  & p {
+    font-weight: 600;
+  }
+}
+
+.sign-up-form {
+  height: 100%;
+  width: 27rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0.5rem;
+
+  & h1 {
+    padding: 0.6rem 0;
+    font-size: 1.4rem;
+    font-weight: 800;
+  }
+
+  & .errorExplanation {
+    color: #ff5555;
+    font-size: 0.9rem;
+    font-weight: 500;
+    position: relative;
+
+    & li {
+      margin-left: 1.1rem;
+    }
+
+    & li::before {
+      content: "●";
+      position: absolute;
+      left: 1%;
+      font-size: 0.8rem;
+    }
+  }
+
+  & .form-field-group {
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    gap: 1.2rem;
+  }
+
+  & .form-field {
+    padding: 0.9rem 0 0.6rem;
+  }
+
+  & fieldset {
+    border: 0;
+    outline: 0;
+    display: flex;
+  }
+
+  & .column {
+    flex-direction: column;
+  }
+
+  & i {
+    color: #ff5555;
+    margin-right: 0.3rem;
+  }
+
+  & label:not(:last-child) {
+    display: flex;
+    font-weight: 700;
+  }
+
+  & input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    background: #eeeeee;
+    color: black;
+    padding: 0.5rem 1rem;
+    margin-top: 0.3rem;
+    border-radius: 0.4rem;
+    border: 0;
+    outline: 0;
+    font-size: 0.9rem;
+    font-weight: 550;
+  }
+
+  & input[type="checkbox"] {
+    width: 3rem;
+    height: 1.2rem;
+    margin-right: 0.7rem;
+  }
+
+  & label:last-child {
+    font-size: 0.9rem;
+  }
+
+  & input[type="submit"] {
+    background-color: #df4290;
+    color: #fff;
+    font-weight: 550;
+    text-align: center;
+    display: inline-block;
+    padding: 0.6rem 2.2rem;
+    margin: 0.7rem 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      background-color: #ce1571;
+    }
+  }
+
+  & .recaptcha-terms {
+    font-size: 0.8rem;
+  }
+}
+
+/* =============== RESPONSIVE MEDIA QUERIES ============= */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 86%;
+  }
+
+  .hero-section {
+    display: none;
+  }
+
+  .content-section {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .sign-in p {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .sign-up-form {
+    width: 65%;
+    height: auto;
+    align-self: center;
+    margin-top: 0;
+
+    & input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 85%;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 80%;
+  }
+
+  .sign-up-form {
+    width: 85%;
+
+    & input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .sign-in {
+    margin: 0;
+  }
+}
