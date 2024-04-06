@@ -1,13 +1,13 @@
-const form = document.querySelector("form");
+const signupForm = document.querySelector(".sign-up-form");
 const nameInput = document.getElementById("name");
 const usernameInput = document.getElementById("username");
 const passwordInput = document.getElementById("password");
 const emailInput = document.getElementById("email");
+const checkboxInput = document.getElementById("user-terms");
 const nameLabel = document.querySelector("label[for='name']");
 const usernameLabel = document.querySelector("label[for='username']");
 const passwordLabel = document.querySelector("label[for='password']");
 const emailLabel = document.querySelector("label[for='email']");
-const checkboxInput = document.getElementById("user-terms");
 const errorExplanation = document.querySelector(".errorExplanation ul");
 const submitButton = document.querySelector("input[type=submit]");
 
@@ -45,7 +45,7 @@ function removeError() {
 }
 
 // Add event listener to the form to handle form submission
-form.addEventListener("submit", (event) => {
+signupForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
   removeError(); // Remove any existing errors
@@ -107,6 +107,6 @@ form.addEventListener("submit", (event) => {
 
   // Form will submitted  if there are no errors
   if (!hasErrors) {
-    form.submit();
+    signupForm.submit();
   }
 });
