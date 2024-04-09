@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================================ NAV CONTENT =============================== */
+nav {
+  height: 4rem;
+  width: 100%;
+  padding: 2rem 2rem 0;
+}
+
+.logo {
+  width: 6rem;
+  height: auto;
+}
+
+/* ================================ MAIN CONTENT =============================== */
+main {
+  min-height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* =========================== Header ======================= */
+header {
+  margin-bottom: 2.3rem;
+}
+
+header h1 {
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+}
+
+header p {
+  color: #6e6d7a;
+  font-weight: 550;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* =========================== Avatar Upload Content ======================= */
+.avatar-upload {
+  margin-bottom: 3.5rem;
+}
+
+.avatar-upload h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.avatar-upload-container {
+  display: flex;
+  gap: 3rem;
+  margin-top: 1.4rem;
+}
+
+/* ========================== Avatar-Upload Dropzone ======================== */
+.avatar-upload-dropzone {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  border: 3px dashed #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+
+  &:hover {
+    border-color: #df4290;
+  }
+}
+
+.has-image {
+  border: none;
+}
+
+.avatar-preview {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.camera-icon i {
+  color: #9e9ea7;
+  font-size: 1.6rem;
+}
+
+.delete-avatar i {
+  position: absolute;
+  left: 50%;
+  bottom: -12%;
+  transform: translateX(-50%);
+  height: 20%;
+  width: 20%;
+  font-size: 0.7rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 2;
+  background-color: #ff5555;
+  color: #fff;
+  outline: 3px solid #fff;
+}
+
+.has-image:hover .delete-avatar i {
+  display: flex;
+}
+
+/* ========================== Choose-Image Button & Avatar-Select ======================== */
+.avatar-upload-actions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.2rem;
+}
+
+.choose-image-button {
+  width: 8rem;
+  background-color: #fff;
+  color: #0d0c22;
+  border: 1.5px solid #e7e7e9;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  font-weight: 650;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.avatar-select {
+  color: #9e9ea7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.avatar-select-trigger {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-select-trigger i {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+  transition: 0.2s ease-in-out;
+}
+
+.rotate i {
+  transform: rotate(90deg);
+}
+
+.avatar-select-trigger span {
+  font-size: 0.9rem;
+  font-weight: 550;
+
+  &:hover {
+    color: #6e6d7a;
+    cursor: pointer;
+  }
+}
+
+.avatar-select-list {
+  display: none;
+  gap: 1rem;
+  list-style: none;
+  margin-top: 0.7rem;
+
+  &.show {
+    display: flex;
+  }
+}
+
+.avatar-select-item img {
+  width: 2.8rem;
+  height: auto;
+  border-radius: 50%;
+
+  &:hover {
+    outline: 4px solid #e7e7e9;
+    cursor: pointer;
+  }
+}
+
+/* ========================== Location Container ======================== */
+.location-container {
+  display: flex;
+  flex-direction: column;
+}
+
+label[for="location"] {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#location {
+  font-size: 1.1rem;
+  font-weight: 550;
+  padding: 0.5rem 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 0;
+  background: transparent;
+  color: #000;
+}
+
+/* ============================ Navigation ============================ */
+.navigate-to-next {
+  background-color: #df4290;
+  color: #fff;
+  font-weight: 550;
+  text-align: center;
+  display: block;
+  padding: 0.5rem 4.4rem;
+  margin: 0.7rem 0 0.4rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  transition: all 0.3s ease-in;
+
+  &:enabled:hover {
+    background-color: #ce1571;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+
+  &:disabled + .navigate-to-return {
+    display: none;
+  }
+}
+
+.navigate-to-return {
+  font-size: 0.7rem;
+  font-weight: 550;
+  margin-left: 2.5rem;
+  color: #6e6d7a;
+}
+
+/* ========================= RESPONSIVE MEDIA QUERIES ========================== */
+
+@media screen and (max-width: 1024px) {
+  body {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 88%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  html {
+    font-size: 73%;
+  }
+
+  body {
+    gap: 2rem;
+  }
+
+  main {
+    padding: 1.5rem 2rem;
+  }
+
+  .avatar-upload-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .avatar-upload-dropzone {
+    margin-left: 1rem;
+  }
+
+  .avatar-upload-button {
+    width: 13rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 69%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 59%;
+  }
+}
