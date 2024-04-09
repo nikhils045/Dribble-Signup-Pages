@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Profile | Dribbble</title>
+    <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/createProfile.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="#">
+        <img src="public/images/logo.png" alt="Logo" class="logo" />
+      </a>
+    </nav>
+
+    <main>
+      <div class="main-container">
+        <header>
+          <h1>Welcome! Let’s create your profile</h1>
+          <p>Let others get to know you better! You can do these later</p>
+        </header>
+
+        <section>
+          <div class="avatar-upload">
+            <h3>Add an avatar</h3>
+
+            <div class="avatar-upload-container">
+              <label class="avatar-upload-dropzone">
+                <div class="avatar-preview"></div>
+                <input type="file" accept="image/*" id="avatarUpload" />
+                <div class="camera-icon"><i class="bx bxs-camera-plus"></i></div>
+                <div class="delete-avatar"><i class="bx bxs-trash"></i></div>
+              </label>
+
+              <div class="avatar-upload-actions">
+                <button class="choose-image-button">Choose image</button>
+
+                <div class="avatar-select">
+                  <a class="avatar-select-trigger">
+                    <i class="bx bx-chevron-right bx-flip-vertical"></i>
+                    <span>Or choose one of our defaults</span>
+                  </a>
+                  <ul class="avatar-select-list">
+                    <li class="avatar-select-item">
+                      <img src="public/images/default-avatar-gradient-1.png" />
+                    </li>
+                    <li class="avatar-select-item">
+                      <img src="public/images/default-avatar-gradient-2.png" />
+                    </li>
+                    <li class="avatar-select-item">
+                      <img src="public/images/default-avatar-gradient-3.png" />
+                    </li>
+                    <li class="avatar-select-item">
+                      <img src="public/images/default-avatar-gradient-4.png" />
+                    </li>
+                    <li class="avatar-select-item">
+                      <img src="public/images/default-avatar-gradient-5.png" />
+                    </li>
+                    <li class="avatar-select-item">
+                      <img src="public/images/default-avatar-gradient-6.png" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-container">
+            <label for="location">Add your location</label>
+            <input type="text" id="location" placeholder="Enter a location" />
+          </div>
+        </section>
+
+        <div class="navigation">
+          <button class="navigate-to-next" disabled>Next</button>
+          <a href="index.html" class="navigate-to-return">or Press RETURN</a>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="javascript/createProfile.js"></script>
+  </body>
+</html>
