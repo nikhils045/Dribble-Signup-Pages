@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What brings you to Dribbble?</title>
+    <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/signupReasons.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="#">
+        <img src="public/images/logo.png" alt="Logo" class="logo" />
+      </a>
+      <a href="createProfile.html" class="back-step-navigation">
+        <i class="bx bx-chevron-left"></i>
+      </a>
+    </nav>
+
+    <main>
+      <header>
+        <h1>What brings you to Dribbble?</h1>
+        <p>
+          Select the options that best describe you. Don't worry, you can explore
+          other options later.
+        </p>
+      </header>
+
+      <section class="options-container">
+        <div class="option">
+          <div class="option-content">
+            <img
+              src="public/images/option-img1.png"
+              alt="Illustration: Designer Life"
+            />
+            <h3>I'm a designer looking to share my work</h3>
+            <p class="option-para">
+              With over 7 million shots from a vast community of designers, Dribbble
+              is the leading source for design inspiration.
+            </p>
+            <div class="checkbox-container">
+              <input type="checkbox" id="checkbox-1" />
+              <label for="checkbox-1"></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="option-content">
+            <img
+              src="public/images/option-img2.png"
+              alt="Illustration: Hiring a Designer"
+            />
+            <h3>I'm looking to hire a designer</h3>
+            <p class="option-para">
+              With over 7 million shots from a vast community of designers, Dribbble
+              is the leading source for design inspiration.
+            </p>
+            <div class="checkbox-container">
+              <input type="checkbox" id="checkbox-2" />
+              <label for="checkbox-2"></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="option-content">
+            <img
+              src="public/images/option-img3.png"
+              alt="Illustration: Inspiration"
+            />
+            <h3>I'm looking for design inspiration</h3>
+            <p class="option-para">
+              With over 7 million shots from a vast community of designers, Dribbble
+              is the leading source for design inspiration.
+            </p>
+            <div class="checkbox-container">
+              <input type="checkbox" id="checkbox-3" />
+              <label for="checkbox-3"></label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <p class="multi-select-info">Anything else? You can select multiple</p>
+
+      <div class="navigation">
+        <button class="navigate-to-finish" disabled>Finish</button>
+        <a href="#" class="navigate-to-return">or Press RETURN</a>
+      </div>
+    </main>
+
+    <script type="module" src="javascript/signupReasons.js"></script>
+  </body>
+</html>
