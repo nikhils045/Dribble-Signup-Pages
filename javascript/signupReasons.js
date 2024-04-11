@@ -23,8 +23,10 @@ function updateMultiSelectInfo() {
   multiSelectInfo.style.display = finishButton.disabled ? "none" : "block";
 }
 
-updateMultiSelectInfo();
-finishButton.disabled = !isAnyCheckboxChecked();
+window.addEventListener("load", function () {
+  updateMultiSelectInfo();
+  finishButton.disabled = !isAnyCheckboxChecked();
+});
 
 finishButton.addEventListener("click", function () {
   window.location.href = "emailVerification.html";
