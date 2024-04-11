@@ -53,12 +53,25 @@ nav {
   height: auto;
 }
 
-input[type="search"] {
-  width: 7.5rem;
-  padding: 0.6rem 0.9rem;
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #ececec;
-  color: #6e6d7a;
+  padding: 0.6rem;
   border-radius: 0.5rem;
+  color: #6e6d7a;
+}
+
+.search-container i{
+  font-size: 1.2rem;
+  margin-right: .3rem;
+  cursor: pointer;
+}
+
+input[type="search"] {
+  width: 7rem;
+  background-color: #ececec;
   font-weight: 500;
   font-size: 0.9rem;
   border: 0;
