@@ -26,7 +26,6 @@ function updateMultiSelectInfo() {
 updateMultiSelectInfo();
 finishButton.disabled = !isAnyCheckboxChecked();
 
-finishButton.addEventListener("click", function (e) {
-  e.preventDefault();
+finishButton.addEventListener("click", function () {
   window.location.href = "emailVerification.html";
 });
