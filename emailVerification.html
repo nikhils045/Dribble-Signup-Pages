@@ -33,8 +33,13 @@
             <i class="bx bxs-x-circle"></i>
           </div>
         </div>
-        <div class="profile-pic"></div>
-        <button class="upload-btn">Upload</button>
+        <label class="avatar-upload-dropzone">
+          <div class="avatar-preview"></div>
+          <input type="file" accept="image/*" id="avatarUpload" />
+          <div class="camera-icon"><i class="bx bxs-camera-plus"></i></div>
+          <div class="delete-avatar"><i class="bx bxs-trash"></i></div>
+        </label>
+        <button class="upload-button">Upload</button>
       </div>
     </nav>
 
@@ -85,7 +90,7 @@
         </div>
 
         <div class="other-links">
-          <ul>
+          <ul class="links-list">
             <li class="head">For designers</li>
             <li><a href="#">Go Pro!</a></li>
             <li><a href="#">Explore design work</a></li>
@@ -97,7 +102,7 @@
             <li><a href="#">Code of conduct</a></li>
           </ul>
 
-          <ul>
+          <ul class="links-list">
             <li class="head">Hire designers</li>
             <li><a href="#">Post a job opening</a></li>
             <li><a href="#">Post a freelance project</a></li>
@@ -106,7 +111,7 @@
             <li><a href="#">Advertise with us</a></li>
           </ul>
 
-          <ul>
+          <ul class="links-list">
             <li class="head">Company</li>
             <li><a href="#">About</a></li>
             <li><a href="#">Careers</a></li>
@@ -119,7 +124,7 @@
             <li><a href="#">Cookie policy</a></li>
           </ul>
 
-          <ul>
+          <ul class="links-list">
             <li class="head">Directories</li>
             <li><a href="#">Design jobs</a></li>
             <li><a href="#">Designers for hire</a></li>
@@ -133,7 +138,7 @@
             <li><a href="#">Font Squirrel</a></li>
           </ul>
 
-          <ul>
+          <ul class="links-list">
             <li class="head">Design Resources</li>
             <li><a href="#">Freelancing</a></li>
             <li><a href="#">Design Hiring</a></li>
@@ -157,5 +162,7 @@
         </div>
       </div>
     </footer>
+
+    <script type="module" src="javascript/emailVerification.js"></script>
   </body>
 </html>
