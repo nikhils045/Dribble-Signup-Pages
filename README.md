@@ -27,4 +27,5 @@ This document provides an overview of the signup pages code and its functionalit
 ## Contributing
 
 Feel free to fork the repository and submit pull requests with your enhancements or
-bug fixes. We appreciate contributions that make the game even more enjoyable!
+bug fixes. We appreciate contributions that make the website more user-friendly and
+robust.
